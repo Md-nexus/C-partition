@@ -13,7 +13,7 @@ file_types = {
 
 def split_file(file_path, location1, location2):
     # Split file into chunks
-    chunk_size = 1024 * 1024 * int(input(Enter Chunk-size in MB:))  # Calculates Chunk-size in MB
+    chunk_size = 1024 * 1024 * int(input("Enter Chunk-size in MB:"))  # Calculates Chunk-size in MB
     file_size = os.path.getsize(file_path)
     num_chunks = (file_size // chunk_size) + (1 if file_size % chunk_size else 0)
 
